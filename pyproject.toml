@@ -12,7 +12,7 @@ dependencies = [
   "azure-identity==1.25.1",
   "azure-keyvault-keys==4.11.0",
   "azure-monitor-opentelemetry==1.8.10",
-  "azure-storage-blob==12.27.1",
+  "azure-storage-blob==12.30.3",
   "cryptography==50.0.0",
 ]
 
