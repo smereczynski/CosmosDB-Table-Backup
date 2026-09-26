@@ -35,7 +35,7 @@ jobs:
     outputs:
       image: ${{ steps.image.outputs.reference }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Validate release configuration
         run: |
           : "${SUBSCRIPTION_ID:?Set AZURE_BACKUP_SUBSCRIPTION_ID in the release environment}"

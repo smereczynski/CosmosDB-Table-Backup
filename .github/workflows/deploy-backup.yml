@@ -46,7 +46,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: backup-infrastructure
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Validate deployment configuration
         run: |
           : "${SUBSCRIPTION_ID:?Set AZURE_BACKUP_SUBSCRIPTION_ID in the backup-infrastructure environment}"

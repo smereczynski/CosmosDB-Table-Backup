@@ -39,7 +39,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: source-integration
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Validate deployment configuration
         run: |
           : "${SUBSCRIPTION_ID:?Set AZURE_SOURCE_SUBSCRIPTION_ID in the source-integration environment}"
