@@ -105,7 +105,7 @@ jobs:
             --result-format FullResourcePayloads --output json > what-if.json
           python3 scripts/guard-what-if.py what-if.json
       - name: Upload what-if
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: backup-what-if-${{ github.run_id }}
           retention-days: 30
@@ -133,7 +133,7 @@ jobs:
             --output json > deployment.json
       - name: Upload deployment outputs
         if: inputs.apply
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: backup-deployment-${{ github.run_id }}
           retention-days: 30

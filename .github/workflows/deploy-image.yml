@@ -48,7 +48,7 @@ jobs:
         run: ./scripts/deploy-job-image.sh
       - name: Record deployed image
         run: printf '%s\n' "$IMAGE" > deployed-image.txt
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: deployed-image-${{ github.run_id }}
           retention-days: 90

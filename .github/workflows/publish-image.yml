@@ -72,7 +72,7 @@ jobs:
           ACR_LOGIN_SERVER: ${{ env.REGISTRY_SERVER }}
           AZURE_RESOURCE_GROUP: ${{ env.RESOURCE_GROUP }}
         run: ./scripts/deploy-job-image.sh
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: image-reference-${{ github.run_id }}
           retention-days: 90
