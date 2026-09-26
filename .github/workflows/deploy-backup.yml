@@ -55,7 +55,7 @@ jobs:
           : "${LOCATION:?Set AZURE_LOCATION in the backup-infrastructure environment}"
           : "${RESOURCE_GROUP:?Set AZURE_RESOURCE_GROUP in the backup-infrastructure environment}"
           : "${BACKUP_JOB_NAME:?Set BACKUP_JOB_NAME in the backup-infrastructure environment}"
-      - uses: azure/login@v2
+      - uses: azure/login@v3
         with:
           client-id: ${{ vars.AZURE_BACKUP_DEPLOY_CLIENT_ID }}
           tenant-id: ${{ env.TENANT_ID }}

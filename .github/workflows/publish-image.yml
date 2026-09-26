@@ -45,7 +45,7 @@ jobs:
           : "${REGISTRY_SERVER:?Set ACR_LOGIN_SERVER in the release environment}"
           : "${BACKUP_JOB_NAME:?Set BACKUP_JOB_NAME in the release environment}"
           : "${RESTORE_JOB_NAME:?Set RESTORE_JOB_NAME in the release environment}"
-      - uses: azure/login@v2
+      - uses: azure/login@v3
         with:
           client-id: ${{ vars.AZURE_RELEASE_CLIENT_ID }}
           tenant-id: ${{ env.TENANT_ID }}

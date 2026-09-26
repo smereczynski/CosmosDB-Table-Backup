@@ -45,7 +45,7 @@ jobs:
           : "${SUBSCRIPTION_ID:?Set AZURE_SOURCE_SUBSCRIPTION_ID in the source-integration environment}"
           : "${TENANT_ID:?Set AZURE_TENANT_ID in the source-integration environment}"
           : "${SOURCE_ACCOUNT_ID:?Set SOURCE_COSMOS_ACCOUNT_RESOURCE_ID in the source-integration environment}"
-      - uses: azure/login@v2
+      - uses: azure/login@v3
         with:
           client-id: ${{ vars.AZURE_SOURCE_DEPLOY_CLIENT_ID }}
           tenant-id: ${{ env.TENANT_ID }}
