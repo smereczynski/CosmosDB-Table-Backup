@@ -46,3 +46,5 @@ Deployments use separate GitHub environments and federated identities for infras
 ## Scope
 
 Phase 1 implements daily backups. Phase 2 adds guarded restore tooling and a dormant-by-default monthly validation job targeting a separate private, keyless Cosmos Table account. Backup and restore schedules remain disabled until their respective acceptance gates pass.
+
+## Code Review
